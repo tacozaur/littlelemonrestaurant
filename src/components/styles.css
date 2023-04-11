@@ -1,0 +1,111 @@
+@import '../App.css';
+@import '../assets/arrow.png'
+
+
+/* root and all *selectors rules */
+*, *::after, *::before { box-sizing: border-box;}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html { height: 100%; font-size: 16px;}
+
+:root {
+    --h1-64: 4rem;
+    --h2-40: 2.5rem;
+
+    --p-16: 1rem;
+    --p-18: 1.125rem;
+    --p-20: 1.25rem;
+}
+
+/* FONT VARIABLES (GLOBAL)*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Markazi Text', serif;
+    line-height: 1;
+}
+
+button { font-family: 'Karla', Arial, Helvetica, sans-serif }
+
+p {
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: var(--h1-64);
+    font-weight: 500;
+}
+h2 {
+    font-size: var(--h2-40);
+    font-weight: 400;
+}
+
+.pRegular-16 {
+    font-size: var(--p-16);
+    font-weight: 400;
+}
+
+.pMedium-16 {
+    font-size: var(--p-16);
+    font-weight: 500;
+}
+
+.pExtraBold-16 {
+    font-size: var(--p-16);
+    font-weight: 800;
+}
+
+
+.pMedium-18 {
+    font-size: var(--p-18);
+    font-weight: 500;
+}
+.pBold-18 {
+    font-size: var(--p-18);
+    font-weight: 700;
+}
+
+.pExtraBoldUPPER-20 {
+    font-size: var(--p-20);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+
+/* HEADER */
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .5);
+}
+
+/* NAV */
+nav ul {
+    list-style: none;
+    z-index: 20;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav li {
+    padding: 1.75rem;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+nav p {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black
+}
+
+nav a {text-decoration: none;}

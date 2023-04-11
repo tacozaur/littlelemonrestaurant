@@ -1,0 +1,170 @@
+
+
+.layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(240px, auto);
+    grid-gap: 20px;
+}
+
+.hero {
+    background-color: #495E57;
+    align-items: center;
+    min-height: 380px;
+    padding-top: 12vh;
+    box-sizing: content-box;
+}
+
+.hero-nested, .footer-nested {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    position: relative;
+}
+
+
+.hero-content-container {
+    grid-column: 3 / span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 10% 0;
+}
+
+.hero-content-container h1,
+.hero-content-container h2,
+.hero-cta {
+    flex-grow: 1;
+}
+
+.hero-cta p {
+    padding-bottom: 24px;
+    color: white;
+    width: 80%;
+}
+
+.hero-content-container h1,
+.about-container-title h1 { color: #F4CE14;}
+.hero-content-container h2 { color: white; }
+
+
+
+.hero-image-container {
+    grid-column: 7 / span 4;
+    justify-self: end;
+    background-image: url('/src/assets/hero-img.png');
+    width: 80%;
+    background-size: cover;
+    top: 8rem;
+    position: absolute;
+    border-radius: 16px;
+    min-height: 80%;
+}
+
+.hero, .testimonials, .footer { grid-column: span 12; }
+.highlights, .about { grid-column: 3 / span 8; }
+
+.testimonials-nested {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.testimonials {
+    background-color: #F4CE14;
+    text-align: center;
+    min-height: 580px;
+    align-items: center;
+}
+
+.testimonials-container {
+    grid-column: 3 / span 8;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.testimonials-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.about {margin: 10vh 0 11vh 0;}
+.about-flex {
+    display: flex;
+    min-height: 420px;
+    align-items: center;
+    gap: 120px;
+}
+
+.about-content-container,
+.restaurant-images-container {
+    flex: 1;
+}
+
+.about-content-container {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    justify-content: center;
+    gap: 32px;
+}
+
+
+.about-container-description,
+.about-container-title {
+    flex: 1;
+    justify-content: center;
+}
+
+.restaurant-images-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+
+.restaurant-images-container img:first-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.restaurant-images-container img:last-child {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.about-container-title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer {
+    background-color: #495E57;
+    align-items: center;
+    padding: 2rem 0;
+}
+.footer-container {
+    grid-column: 3 / span 8;
+    display: flex;
+    align-items: top;
+    text-align: center;
+}
+.footer-flex-item {
+    flex-grow: 1;
+}
+.footer-flex-item img { max-width: 144px; }
+.footer-flex-item ul {
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-flex-item ul li:first-child { padding-bottom: 32px; font-weight: 500;}

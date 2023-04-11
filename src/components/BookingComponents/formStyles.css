@@ -1,0 +1,65 @@
+
+.formContainer {
+    margin: 0 auto;
+    height: 100%;
+}
+fieldset {
+    background-color: #fff;
+    display: flex;
+    flex: row wrap;
+    flex-direction: column;
+    min-width: 480px;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+}
+.heading {
+    font-size: 2rem;
+    align-self: center;
+}
+label {
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+input {
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    height: 2.5rem;
+    padding: 0 .5rem;
+}
+select {
+    border-radius: .25rem;
+    border: 1px solid #ccc;
+    height: 2.5rem;
+    padding: 0 .5rem;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('../../assets/arrow.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+option {
+    color: #495E57;
+    background-color: #EDEFEE;
+}
+textarea {
+    border-radius: .25rem;
+    border: 1px solid #ccc;
+    height: 5rem;
+    padding: 0 .5rem;
+}
+sup {
+    color: red;
+    top: -0.125rem;
+    font-size: .95rem;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+.fieldError {
+    bottom: -.5rem;
+    color: red;
+    font-size: .75rem;
+}
