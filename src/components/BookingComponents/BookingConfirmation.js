@@ -14,6 +14,7 @@ const ConfirmedBooking = () => {
             <p>Phone Number: {bookingData.phoneNumber.value}</p>
             <p>Occasion: {bookingData.occasion.value}</p>
             <p>Guests: {bookingData.guests.value}</p>
+            <p>Date: {bookingData.date.value}</p>
         </div>
     );
 };

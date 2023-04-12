@@ -27,7 +27,9 @@ const styles = {
 const BookingPage = () => {
 
 
-  const [bookingData, setBookingData] = useState({
+  const [bookingData, setBookingData] = useState(() => {
+    const savedBookingData = JSON.parse(localStorage.getItem('bookingData'));
+  return savedBookingData || {
     occasion: {
       value: 'Choose',
       isTouched: false,
@@ -56,7 +58,8 @@ const BookingPage = () => {
       value: '',
       isTouched: false
     }
-  })
+  };
+});
 
   const [isFirstFormSubmitted, setisFirstFormSubmitted] = useState(false)
   const [isSecondFormSubmitted, setisSecondFormSubmitted] = useState(false)
@@ -102,16 +105,25 @@ const BookingPage = () => {
   useEffect(() => {
     initializeTimes()
 
-    const savedBookingData = JSON.parse(localStorage.getItem('bookingData'))
+    const savedBookingData = JSON.parse(localStorage.getItem('testJSON'))
     if (savedBookingData) {
       setBookingDataFromLocalStorage(savedBookingData)
+      // setBookingData(savedBookingData)
     }
   }, [])
+
 
   const handleChange = (newBookingData) => {
     setBookingData(newBookingData);
     setBookingDataFromLocalStorage(newBookingData)
-  }
+    localStorage.setItem('testJSON', JSON.stringify({
+      ...bookingData,
+      date: {
+        value: newBookingData.date.value,
+        isTouched: newBookingData.date.isTouched,
+      }
+    }));
+      }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -177,6 +189,7 @@ const BookingPage = () => {
             occasion={bookingData.occasion}
             guests={bookingData.guests}
             request={bookingData.requestMessage}
+            setBookingData={setBookingData}
           />
         ) : null}
       </div>

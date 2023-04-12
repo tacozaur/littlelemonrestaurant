@@ -28,7 +28,7 @@ const BookingForm = ({
     const newBookingData = {
       ...bookingData,
       date: {
-        value: new Date(e.target.value),
+        value: new Date(e.target.value).toISOString().slice(0, 10),
         isTouched: true,
       }
     }
@@ -82,7 +82,7 @@ const BookingForm = ({
           <input
             type='date'
             id='res-date'
-            value={date.value.toISOString().substring(0, 10)}
+            value={date.value}
             onChange={handleDateChange}
           />
           <label htmlFor='res-time'>
