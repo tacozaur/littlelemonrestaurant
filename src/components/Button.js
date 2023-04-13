@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css';
 
 
 
 
 const Button = (props) => {
+    const {padding} = props;
+
     const [buttonHover, setButtonHover] = useState(false);
 
     const handleMouseHover = () => {
@@ -18,14 +21,17 @@ const Button = (props) => {
     const buttonStyles = {
         button: {
             transition: '.3s',
-            padding: '16px 24px',
+            padding: padding,
             borderRadius: '6px',
             border: 'none',
             backgroundColor: buttonHover ? props.hoverBgColor : props.bgColor,
-            color: buttonHover ? "#fff" : "#333",
             fontSize: 'var(--p)',
             fontWeight: '500',
             cursor: 'pointer'
+        },
+        link: {
+            textDecoration: 'none',
+            color: buttonHover ? "#fff" : "#333",
         }
     }
 
@@ -33,11 +39,15 @@ const Button = (props) => {
         <>
             <button
                 style={buttonStyles.button}
-                class='btn'
                 onMouseEnter={handleMouseHover}
-                onMouseLeave={handleMouseLeave}
+                 onMouseLeave={handleMouseLeave}
                 >
-                {props.text}
+                <Link
+                to={props.to}
+                style={buttonStyles.link}
+                >
+                    {props.text}
+                </Link>
             </button>
         </>
     )

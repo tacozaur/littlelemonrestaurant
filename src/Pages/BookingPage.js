@@ -1,6 +1,7 @@
 import React, {useEffect, useReducer, useState} from 'react';
 
 import { fetchAPI, submitAPI } from './api.js'
+import { useNavigate } from 'react-router-dom';
 
 import '../components/styles.css'
 import '../App.css';
@@ -9,23 +10,22 @@ import SecondBookingForm from '../components/BookingComponents/SecondBookingForm
 import ConfirmedBooking from '../components/BookingComponents/BookingConfirmation.js'
 
 const styles = {
-    BookingPageContainer: {
-        height: '100%',
-        backgroundColor: '#495E57',
-        display: 'flex',
-        flexDirection: 'column',
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: '12.5vh 0 3vh 0'
-    },
-
+  BookingPageContainer: {
+      height: '100%',
+      display: 'flex',
+      position: 'relative',
+      top: '9vh',
+      backgroundColor: '#0F2027',
+      flexDirection: 'column',
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+  },
 }
-
-
 
 const BookingPage = () => {
 
+  const navigate = useNavigate()
 
   const [bookingData, setBookingData] = useState(() => {
     const savedBookingData = JSON.parse(localStorage.getItem('bookingData'));
@@ -147,6 +147,7 @@ const BookingPage = () => {
       setisSecondFormSubmitted(true)
       setisBookingConfirmationDisplayed(true)
       localStorage.setItem('bookingData', JSON.stringify(bookingData))
+      navigate('/confirmedReservation')
     } else {
       alert('Failed to submit booking.')
     }
@@ -156,43 +157,43 @@ const BookingPage = () => {
   return (
     <>
       <div style={styles.BookingPageContainer}>
-        {isFirstFormSubmitted && !isSecondFormSubmitted && !isBookingConfirmationDisplayed ? (
-          <SecondBookingForm
-            bookingData={bookingData}
-            handleChange={handleChange}
-            handleSubmit={handleSecondSubmit}
-            name={bookingData.name}
-            email={bookingData.email}
-            phoneNumber={bookingData.phoneNumber}
-          />
-        ) : null}
-        {isSecondFormSubmitted && isBookingConfirmationDisplayed ? (
-          <ConfirmedBooking
-            name={bookingData.name}
-            email={bookingData.email}
-            phoneNumber={bookingData.phoneNumber}
-            occasion={bookingData.occasion}
-            guests={bookingData.guests}
-            request={bookingData.requestMessage.value}
-            bookingDataFromLocalStorage={bookingDataFromLocalStorage}
-          />
-        ) : null}
-        {!isFirstFormSubmitted && !isSecondFormSubmitted && !isBookingConfirmationDisplayed ? (
-          <BookingForm
-            handleSubmit={handleSubmit}
-            handleChange={handleChange}
-            availableTimes={bookingData.timesState}
-            updateTimes={updateTimes}
-            date={bookingData.date}
-            dateTouched={bookingData.date.isTouched}
-            bookingData={bookingData}
-            occasion={bookingData.occasion}
-            guests={bookingData.guests}
-            request={bookingData.requestMessage}
-            setBookingData={setBookingData}
-          />
-        ) : null}
-      </div>
+          {isFirstFormSubmitted && !isSecondFormSubmitted && !isBookingConfirmationDisplayed ? (
+            <SecondBookingForm
+              bookingData={bookingData}
+              handleChange={handleChange}
+              handleSubmit={handleSecondSubmit}
+              name={bookingData.name}
+              email={bookingData.email}
+              phoneNumber={bookingData.phoneNumber}
+            />
+          ) : null}
+          {isSecondFormSubmitted && isBookingConfirmationDisplayed ? (
+            <ConfirmedBooking
+              name={bookingData.name}
+              email={bookingData.email}
+              phoneNumber={bookingData.phoneNumber}
+              occasion={bookingData.occasion}
+              guests={bookingData.guests}
+              request={bookingData.requestMessage.value}
+              bookingDataFromLocalStorage={bookingDataFromLocalStorage}
+            />
+          ) : null}
+          {!isFirstFormSubmitted && !isSecondFormSubmitted && !isBookingConfirmationDisplayed ? (
+            <BookingForm
+              handleSubmit={handleSubmit}
+              handleChange={handleChange}
+              availableTimes={bookingData.timesState}
+              updateTimes={updateTimes}
+              date={bookingData.date}
+              dateTouched={bookingData.date.isTouched}
+              bookingData={bookingData}
+              occasion={bookingData.occasion}
+              guests={bookingData.guests}
+              request={bookingData.requestMessage}
+              setBookingData={setBookingData}
+            />
+          ) : null}
+        </div>
     </>
   );
 }

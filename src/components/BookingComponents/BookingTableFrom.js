@@ -51,6 +51,7 @@ const BookingForm = ({
   return (
     <>
       <form
+      style={{margin: '2.5rem 0 1.25rem 0'}}
       className="formContainer"
       onSubmit={(e) => {
         e.preventDefault();

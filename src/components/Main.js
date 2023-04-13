@@ -13,9 +13,11 @@ const Hero = () => {
                 <div className='hero-cta'>
                     <p className='pMedium-18'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <Button
+                        to="/reservations"
                         bgColor='#F4CE14'
                         hoverBgColor='#EE9972'
                         text="Reserve a Table"
+                        padding='16px 24px'
                     />
                 </div>
             </div>

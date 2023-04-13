@@ -4,7 +4,7 @@
     height: 100%;
 }
 fieldset {
-    background-color: #fff;
+    background-color: rgba(255, 255 , 255, 1);
     display: flex;
     flex: row wrap;
     flex-direction: column;
@@ -62,4 +62,48 @@ sup {
     bottom: -.5rem;
     color: red;
     font-size: .75rem;
+}
+
+.confirmedBookingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url('../../assets/backgroundBookingConfirmation.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+.confirmedBookingHeading {
+    display: flex;
+    flex-direction: column;
+}
+
+.bookingPersonalDetails {
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+    margin: 0 auto;
+    gap: 10rem;
+}
+
+.personalDetailsLabels {
+    text-align: left;
+}
+.personalDetails {
+    text-align: right;
+}
+.personalDetailsLabels > p {
+    padding-bottom: 1rem;
+}
+.personalDetails > p {
+    padding-bottom: 1rem;
+}
+.confirmedBookingDetails > p{
+    font-size: .75rem;
+    padding: .5rem .5rem 2rem .5rem;
 }

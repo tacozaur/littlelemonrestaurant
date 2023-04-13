@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import logo from '../logo-header.png'
 import './styles.css'
 import Nav from './Nav.js'
+import { text } from '@fortawesome/fontawesome-svg-core';
 
 const logoStyles = {
     display: "block",
@@ -22,9 +23,18 @@ const Header = () => {
     const [isMinimized, setIsMinimized] = useState(false)
     const [prevScrollPos, setPrevScrollPos] = useState(0)
 
+
     useEffect(() => {
+        const header = document.querySelector('header')
+
         const handleScroll = () => {
             const currentScrollPos = window.pageYOffset
+            if (currentScrollPos > 0) {
+                header.style.backgroundColor = '#495E57';
+            } else {
+                header.style.backgroundColor = 'rgba(1, 1, 1, .35)';
+            }
+
             const isScrolledDown = currentScrollPos >= prevScrollPos
 
             setIsMinimized(isScrolledDown)
@@ -44,13 +54,12 @@ const Header = () => {
             top: '0',
             left: '0',
             right: '0',
-            backgroundColor: 'white'
             }}>
             <div className="logo">
                 <Logo/>
             </div>
             <div className="nav">
-                <Nav />
+                <Nav/>
             </div>
         </header>
         </React.Fragment>

@@ -1,0 +1,32 @@
+.MenuList {
+    text-align: center;
+}
+
+.MenuListHeading {
+    margin-bottom: 4rem;
+}
+
+.MenuListTitleIcon {
+    max-width: 160px;
+    height: auto;
+}
+
+.MenuListItem {
+    border-bottom: 1px solid #EE9972;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+
+.ListItemHeading {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.ListItemName {
+    flex: 1;
+}
+
+.ListItemDescription {    margin-bottom: 2rem;
+    width: 50%;
+}

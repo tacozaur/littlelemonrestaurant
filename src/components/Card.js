@@ -90,6 +90,7 @@ const Card = (props) => {
                 hoverBgColor="#333333"
                 style={cardStyles.foodCardButton}
                 text="Order a Delivery"
+                padding='16px 24px'
               />
             </div>
           </div>

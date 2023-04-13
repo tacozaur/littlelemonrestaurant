@@ -14,6 +14,7 @@
 body, html { height: 100%; font-size: 16px;}
 
 :root {
+    --bigHeading: 5.5rem;
     --h1-64: 4rem;
     --h2-40: 2.5rem;
 
@@ -42,6 +43,11 @@ h1 {
 h2 {
     font-size: var(--h2-40);
     font-weight: 400;
+}
+
+.bigHeading {
+    font-size: var(--bigHeading);
+    font-weight: 500;
 }
 
 .pRegular-16 {
@@ -84,7 +90,6 @@ header {
     justify-content: center;
     align-items: center;
     z-index: 100;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, .5);
 }
 
 /* NAV */
@@ -105,7 +110,7 @@ nav li {
 nav p {
     text-transform: uppercase;
     font-weight: bold;
-    color: black
+    color: white;
 }
 
 nav a {text-decoration: none;}

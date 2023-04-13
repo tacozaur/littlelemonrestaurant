@@ -64,10 +64,12 @@ const Specials = () => {
                 <div style={style.specialsHeading}>
                     <h1 style={style.specialsTitle}>This weeks specials!</h1>
                     <Button
+                    to={'/menu'}
                     style = {style.specialsMenuButton}
                     bgColor='#F4CE14'
                     hoverBgColor='#EE9972'
                     text="Online Menu"
+                    padding='16px 24px'
                     />
                 </div>
                 <div style={style.specialsContainer}>
