@@ -18,38 +18,83 @@ fieldset {
     align-self: center;
 }
 label {
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
     margin: 1rem 0;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 700;
 }
-input {
-    border-radius: 0.25rem;
+input, select {
+    padding: 0 .5rem;
+    text-align: center;
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+    border-radius: 1rem;
     border: 1px solid #ccc;
     height: 2.5rem;
-    padding: 0 .5rem;
-}
-select {
-    border-radius: .25rem;
-    border: 1px solid #ccc;
-    height: 2.5rem;
-    padding: 0 .5rem;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-image: url('../../assets/arrow.png');
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position-x: 1rem, right;
+    background-position-y: center;
+    background-size: 1.25rem, auto;
 }
+
+
 option {
     color: #495E57;
     background-color: #EDEFEE;
 }
 textarea {
-    border-radius: .25rem;
+    border-radius: 1rem;
     border: 1px solid #ccc;
     height: 5rem;
     padding: 0 .5rem;
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
 }
+
+.guestsInput {
+    padding-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.guestsInputButtons {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+}
+.guest {
+    border: none;
+    background-color: transparent;
+    pointer-events: none;
+    font-size: 1.25rem;
+
+}
+.guest::-webkit-inner-spin-button,
+.guest::-webkit-outer-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
+.guestsButton {
+    background-color: transparent;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    padding: .15rem 1.25rem .4rem 1.25rem;
+    transition: all .2s ease-in-out;
+}
+.guestsButton:hover {
+    background-color: rgba(73, 94, 87, .75);
+    color: white;
+}
+
 sup {
     color: red;
     top: -0.125rem;

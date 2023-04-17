@@ -5,6 +5,15 @@ import { handleInputChange } from '../../functions/handleInputChange';
 import ErrorMessage from '../ErrorMessage';
 import { formStyles } from './formStyles';
 
+
+export const validateEmail = (email) => {
+  return String(email)
+  .toLowerCase()
+  .match(
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  )
+}
+
 const SecondBookingForm = ({
   name,
   email,
@@ -14,20 +23,12 @@ const SecondBookingForm = ({
   handleSubmit
 }) => {
 
-  const validateEmail = (email) => {
-    return String(email)
-    .toLowerCase()
-    .match(
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    )
-  }
-
 
   return (
     <>
       <form
       className="formContainer"
-      style={{height: '680px', margin: '2.5rem 0 1.25rem 0'}}
+      style={{height: '680px', marginTop: '6rem'}}
       onSubmit={handleSubmit}
       >
         <fieldset>

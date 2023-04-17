@@ -20,18 +20,19 @@ const Button = (props) => {
 
     const buttonStyles = {
         button: {
-            transition: '.3s',
+            transition: 'all .2s ease-in',
             padding: padding,
             borderRadius: '6px',
             border: 'none',
             backgroundColor: buttonHover ? props.hoverBgColor : props.bgColor,
+            transform: buttonHover ? 'scale(1.075)' : 'scale(1)',
             fontSize: 'var(--p)',
             fontWeight: '500',
             cursor: 'pointer'
         },
         link: {
             textDecoration: 'none',
-            color: buttonHover ? "#fff" : "#333",
+            color: buttonHover ? props.hoverTextColor : props.textColor,
         }
     }
 

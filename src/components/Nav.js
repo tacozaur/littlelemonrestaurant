@@ -1,9 +1,15 @@
 import React from 'react';
+import CartIcon from '../assets/cart-icon.png'
 
 import './styles.css';
 import '../App.css';
 
 import { Link }  from 'react-router-dom'
+
+const cartIconStyle = {
+    width: '48px',
+    height: '48px'
+}
 
 const navItems = [
     'Home',
@@ -14,11 +20,12 @@ const navItems = [
     'Login'
 ]
 
-const Nav = () => {
+const Nav = ({isNavVisible}) => {
+
         return (
             <React.Fragment>
             <nav>
-                <ul>
+                <ul style={{display: isNavVisible ? 'flex' : 'none'}}>
                     <li>
                       <Link to="/" className="nav-item pExtraBoldUPPER-20"><p>{navItems[0]}</p></Link>
                     </li>
@@ -35,7 +42,16 @@ const Nav = () => {
                     <Link to="/online-order" className="nav-item pExtraBoldUPPER-20"><p>{navItems[4]}</p></Link>
                     </li>
                     <li>
-                    <Link to="/login" className="nav-item pExtraBoldUPPER-20"><p>{navItems[5]}</p></Link>
+                    <Link to="/" className="nav-item pExtraBoldUPPER-20"><p>{navItems[5]}</p></Link>
+                    </li>
+                    <li>
+                    <Link to="/" className="nav-item cartt">
+                        <img
+                    src={CartIcon}
+                    alt='Cart'
+                    style={cartIconStyle}
+                    />
+                    </Link>
                     </li>
                 </ul>
             </nav>

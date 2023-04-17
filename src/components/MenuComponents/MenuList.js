@@ -8,7 +8,7 @@ const MenuList = ({imageSrc, title, items}) => {
         item =>
         <div className='MenuListItem'>
             <div className='ListItemHeading'>
-                <p className='ListItemName pBold-18'>{item.name}</p>
+                <p className='ListItemName pBold-18'>{item.title}</p>
                 <p className='ListItemPrice pMedium-16'>{item.price}</p>
             </div>
             <p className='ListItemDescription pRegular-16'>{item.description}</p>

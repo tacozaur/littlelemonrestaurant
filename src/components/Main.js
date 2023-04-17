@@ -16,6 +16,8 @@ const Hero = () => {
                         to="/reservations"
                         bgColor='#F4CE14'
                         hoverBgColor='#EE9972'
+                        textColor='#333'
+                        hoverTextColor='#fff'
                         text="Reserve a Table"
                         padding='16px 24px'
                     />

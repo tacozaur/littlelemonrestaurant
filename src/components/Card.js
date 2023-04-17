@@ -10,13 +10,13 @@ const Card = (props) => {
     const cardStyles = {
       card: {
         backgroundColor: "#fff",
-        borderRadius: "16px",
+        borderRadius: "1rem",
         boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.35)",
-        paddingBottom: "20px",
+        paddingBottom: "1.25rem",
         width: "285px",
         height: "auto",
         display: "flex",
-        rowGap: "8px",
+        rowGap: ".5rem",
         flexDirection: "column",
         ...hoverStyles[props.index],
       },
@@ -25,26 +25,26 @@ const Card = (props) => {
         height: "200px",
         backgroundColor: "white",
         objectFit: "cover",
-        borderTopLeftRadius: "16px",
-        borderTopRightRadius: "16px",
+        borderTopLeftRadius: "1rem",
+        borderTopRightRadius: "1rem",
       },
       foodCardInfo: {
         display: "flex",
-        gap: "32px",
+        gap: "2rem",
         flexDirection: "column",
       },
       foodCardHeading: {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
-        padding: "0 12px",
+        padding: "0 .75rem",
       },
       foodCardDescription: {
-        height: "200px",
+        minHeight: props.height,
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        padding: "0 12px",
+        padding: "0 1rem",
       },
       foodCardButton: {
         alignSelf: "flex-end",
@@ -86,10 +86,12 @@ const Card = (props) => {
                 {props.description}
               </p>
               <Button
-                bgColor="#EDEFEE"
+                bgColor="#F4CE14"
                 hoverBgColor="#333333"
+                textColor ='#333'
+                hoverTextColor= '#fff'
                 style={cardStyles.foodCardButton}
-                text="Order a Delivery"
+                text="Add To Cart"
                 padding='16px 24px'
               />
             </div>

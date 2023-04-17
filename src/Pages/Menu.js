@@ -1,8 +1,8 @@
 import React from 'react';
 import '../App.css'
 import '../components/styles.css'
-
 import backgroundHeadingPhoto from '../assets/aboutUsBackground.jpg'
+
 import TextContainer from '../components/TextContainer'
 
 import AppetizersContainer from '../components/MenuComponents/FoodCategories/Appetizers/AppetizersContainer';
@@ -41,7 +41,7 @@ const styles = {
         marginBottom: '6rem'
     },
     title: {
-        letterSpacing: '.5wrem',
+        letterSpacing: '.5rem',
         wordSpacing: '2rem',
     }
 }
@@ -82,7 +82,9 @@ const MenuPage = () => {
                 <Button
                 to="/reservations"
                 bgColor='#F4CE14'
-                hoverBgColor='#EE9972'
+                hoverBgColor='rgb(244, 120, 50)'
+                textColor='#333'
+                hoverTextColor='#fff'
                 text="Reserve a Table"
                 padding='24px 52px'
                 />

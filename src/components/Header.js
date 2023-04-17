@@ -1,27 +1,29 @@
 import React, { useEffect, useState } from 'react';
 
-import logo from '../logo-header.png'
+// import logo from '../logo-header.png'
 import './styles.css'
 import Nav from './Nav.js'
-import { text } from '@fortawesome/fontawesome-svg-core';
+import Hamburger from './Hamburger';
 
-const logoStyles = {
-    display: "block",
-    width: "auto",
-    marginLeft: "auto",
-    marginRight: "auto",
-    height: "3rem"
-}
+// const logoStyles = {
+//     display: "block",
+//     width: "auto",
+//     marginLeft: "auto",
+//     marginRight: "auto",
+//     height: "3rem"
+// }
 
-const Logo = () => {
-    const logoPic = <img style={logoStyles} src={logo} alt="logo"/>;
-    return logoPic
-}
+// const Logo = () => {
+//     const logoPic = <img style={logoStyles} src={logo} alt="logo"/>;
+//     return logoPic
+// }
 
 
 const Header = () => {
     const [isMinimized, setIsMinimized] = useState(false)
     const [prevScrollPos, setPrevScrollPos] = useState(0)
+
+    const [isNavVisible, setIsNavVisible] = useState(false)
 
 
     useEffect(() => {
@@ -29,10 +31,17 @@ const Header = () => {
 
         const handleScroll = () => {
             const currentScrollPos = window.pageYOffset
+            const screenWidth = window.innerWidth
+
             if (currentScrollPos > 0) {
                 header.style.backgroundColor = '#495E57';
             } else {
                 header.style.backgroundColor = 'rgba(1, 1, 1, .35)';
+            }
+
+            if (screenWidth < 768) {
+                header.style.backgroundColor = 'transparent';
+                header.style.transform= 'none'
             }
 
             const isScrolledDown = currentScrollPos >= prevScrollPos
@@ -47,21 +56,23 @@ const Header = () => {
 
     return (
         <React.Fragment>
-        <header style={{
-            transitionDuration:'.5s',
-            transform: isMinimized ? "translateY(-150px)" : "translateY(0)",
-            position: 'fixed',
-            top: '0',
-            left: '0',
-            right: '0',
-            }}>
-            <div className="logo">
-                <Logo/>
-            </div>
-            <div className="nav">
-                <Nav/>
-            </div>
-        </header>
+            <Hamburger
+            isNavVisible={isNavVisible}
+            setIsNavVisible={setIsNavVisible}
+            />
+            <header
+            style={{
+                transitionDuration:'.5s',
+                position: 'fixed',
+                transform: isMinimized ? 'translateY(-150px)' : 'translateY(0)',
+                }}>
+                {/* <div className="logo">
+                    <Logo/>
+                </div> */}
+                <div className="nav">
+                    <Nav isNavVisible={!isNavVisible}/>
+                </div>
+            </header>
         </React.Fragment>
 
     )
