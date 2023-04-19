@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/littlelemonrestaurant/static/css/main.4f09afb8.css",
-    "main.js": "/littlelemonrestaurant/static/js/main.d14054b4.js",
+    "main.js": "/littlelemonrestaurant/static/js/main.d245e118.js",
     "static/js/787.99ffa8e0.chunk.js": "/littlelemonrestaurant/static/js/787.99ffa8e0.chunk.js",
     "static/media/backgroundBookingConfirmation.jpg": "/littlelemonrestaurant/static/media/backgroundBookingConfirmation.c62921034da001c96aba.jpg",
     "static/media/patriota.jpg": "/littlelemonrestaurant/static/media/patriota.0f2fb214d816899194ff.jpg",
@@ -35,11 +35,11 @@
     "static/media/salads-icon.PNG": "/littlelemonrestaurant/static/media/salads-icon.5fbe2bb12373912a59c8.PNG",
     "index.html": "/littlelemonrestaurant/index.html",
     "main.4f09afb8.css.map": "/littlelemonrestaurant/static/css/main.4f09afb8.css.map",
-    "main.d14054b4.js.map": "/littlelemonrestaurant/static/js/main.d14054b4.js.map",
+    "main.d245e118.js.map": "/littlelemonrestaurant/static/js/main.d245e118.js.map",
     "787.99ffa8e0.chunk.js.map": "/littlelemonrestaurant/static/js/787.99ffa8e0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f09afb8.css",
-    "static/js/main.d14054b4.js"
+    "static/js/main.d245e118.js"
   ]
 }
