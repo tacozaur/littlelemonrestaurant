@@ -40,7 +40,7 @@ const AboutUs = () => {
         <>
         <div style={styles.aboutUsPageContainer}>
             <div style={styles.aboutUsPageHeading}>
-            <h1>Little Lemon's Story</h1>
+            <h1>Little Lemon's Stories</h1>
             <h2>About us</h2>
             </div>
             <TextContainer
