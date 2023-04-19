@@ -1,7 +1,10 @@
 
 .formContainer {
+    min-height: 100vh;
     margin: 0 auto;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 fieldset {
     background-color: rgba(255, 255 , 255, 1);
@@ -151,4 +154,25 @@ sup {
 .confirmedBookingDetails > p{
     font-size: .75rem;
     padding: .5rem .5rem 2rem .5rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    fieldset {
+        min-width: 90vw;
+        max-width: 90vw;
+    }
+
+    .confirmedBookingHeading h1 {
+        font-size: 2.5rem;
+    }
+    .bookingPersonalDetails {
+        gap: 5rem;
+    }
+    .confirmedBookingHeading, .confirmedBookingDetails {
+        width: 80%;
+    }
+    .confirmedBookingDetails > p {
+        padding: 1rem 0;
+    }
 }

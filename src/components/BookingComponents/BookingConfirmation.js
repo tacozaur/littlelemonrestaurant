@@ -18,7 +18,7 @@ const ConfirmedBooking = () => {
             <div className='confirmedBookingContainer'>
                 <div className='confirmedBookingHeading'>
                     <h1>Score a Seat at the Table!</h1>
-                    <h2 style={{fontSize: '2rem', paddingBottom: '2rem'}}>Your Reservation at Little Lemon is Confirmed.</h2>
+                    <h2 style={{fontSize: '1.75rem', paddingBottom: '2rem'}}>Your Reservation at Little Lemon is Confirmed.</h2>
                     <sub
                     className='sub'
                     style={{fontWeight: 500, paddingBottom: '1rem'}}

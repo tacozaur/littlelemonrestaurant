@@ -28,7 +28,6 @@ const SecondBookingForm = ({
     <>
       <form
       className="formContainer"
-      style={{height: '680px', marginTop: '6rem'}}
       onSubmit={handleSubmit}
       >
         <fieldset>

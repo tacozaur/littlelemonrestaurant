@@ -104,36 +104,35 @@ function handleRequestMessageChange(e) {
   handleChange(newBookingData)
 }
 
-  function handleIncrement() {
-    setGuestsValue((prev) => prev + 1)
-    const newBookingData = {
+function handleIncrement() {
+  if (guestsValue < 10) {
+    setGuestsValue((prev) => prev + 1);
+    handleChange({
       ...bookingData,
       guests: {
         value: guestsValue + 1,
         isTouched: true,
-      }
-    }
-    handleChange(newBookingData)
+      },
+    });
   }
+}
 
-  function handleDecrement() {
-    if (guestsValue > 1) {
-      setGuestsValue((prev) => prev - 1);
-      const newBookingData = {
-        ...bookingData,
-        guests: {
-          value: guestsValue - 1,
-          isTouched: true
-        }
-      }
-      handleChange(newBookingData)
-    }
+function handleDecrement() {
+  if (guestsValue > 1) {
+    setGuestsValue((prev) => prev - 1);
+    handleChange({
+      ...bookingData,
+      guests: {
+        value: guestsValue - 1,
+        isTouched: true,
+      },
+    });
   }
+}
 
   return (
     <>
       <form
-      style={{margin: '6rem 0 2rem 0'}}
       className="formContainer"
       onSubmit={(e) => {
         e.preventDefault();

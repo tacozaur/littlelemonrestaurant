@@ -65,6 +65,31 @@
 .hero, .testimonials, .footer { grid-column: span 12; }
 .highlights, .about { grid-column: 3 / span 8; }
 
+.specialsHeading {
+    display: flex;
+    padding: 5rem 0 3rem 0;
+    align-items: center;
+}
+
+.specialsContainer {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.highlightsContainer {
+    padding-bottom: 2rem;
+}
+.specialsTitle {
+    flex-grow: 1;
+}
+
+.spceialsMenuButton {
+    align-self: flex-end;
+}
+
+
 .testimonials-nested {
     display: grid;
     grid-gap: 20px;
@@ -75,30 +100,27 @@
     background-color: #F4CE14;
     text-align: center;
     min-height: 580px;
-    align-items: center;
 }
 
 .testimonials-container {
     grid-column: 3 / span 8;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .testimonials-list-container {
     display: flex;
-    justify-content: space-between;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 
-.about {margin: 10vh 0 11vh 0;}
+.about {margin: 10vh 0;}
 .about-flex {
     display: flex;
     min-height: 420px;
     align-items: center;
-    gap: 120px;
+    gap: 7.5rem;
 }
 
 .about-content-container,
@@ -168,3 +190,72 @@
     gap: 12px;
 }
 .footer-flex-item ul li:first-child { padding-bottom: 32px; font-weight: 500;}
+
+
+@media screen and (max-width: 768px) {
+
+    .hero-content-container {
+        grid-column: 3 / span 8;
+    }
+
+    .hero-image-container {
+        display: none;
+    }
+
+    .hero-nested {
+        grid-template-columns: none;
+    }
+    .highlights {
+        display: flex;
+        justify-content: center;
+    }
+    .specialsHeading {
+        padding: 3rem 0;
+    }
+    .specialsHeading h1 {
+        font-size: 2.5rem;
+    }
+    .specialsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonials-container {
+        padding: 3rem 0;
+    }
+    .testimonials-list-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about {
+        margin: 5vh 0;
+    }
+    .about-flex {
+        text-align: center;
+        flex-direction: column;
+        grid-gap: 2rem;
+    }
+    .about-container-title h1 {
+        font-size: 3.5rem;
+    }
+    .restaurant-images-container img:first-child {
+        display: none;
+    }
+    .restaurant-images-container img:last-child {
+        position: relative;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-flex-item ul {
+        flex-direction: column;
+    }
+    .last ul {
+        padding: 2rem 0;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+

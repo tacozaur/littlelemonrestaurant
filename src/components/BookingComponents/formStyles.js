@@ -13,6 +13,8 @@ export const formStyles = {
       fontSize: '1rem',
       fontWeight: '700',
       cursor: 'pointer',
+      minWidth: '70%',
+      maxWidth: '90%',
     },
     buttonDisabled: {
       border: '1px solid #DEDEDE',

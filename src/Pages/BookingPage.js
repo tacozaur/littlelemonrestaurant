@@ -11,7 +11,7 @@
 
   const styles = {
     BookingPageContainer: {
-        height: '100%',
+        minHeight: '100%',
         display: 'flex',
         position: 'relative',
         backgroundColor: '#0F2027',

@@ -59,7 +59,7 @@ const ReviewCard = (props) => {
 
         reviewCard: {
             flex: '0 1 calc(25% - 20px)',
-            maxWidth:'calc(25% - 20px)',
+            maxWidth:'300px',
             backgroundColor: '#fff',
             border: '1px solid #ccc',
             padding: '20px',
