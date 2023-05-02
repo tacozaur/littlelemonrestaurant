@@ -21,11 +21,10 @@ import {Routes, Route, useLocation} from 'react-router-dom'
 function App() {
   const location = useLocation()
   const isConfirmedReservationPage = location.pathname === '/confirmedReservation'
-  const isMenuPage = location.pathname === '/menu'
 
   return (
     <>
-    {!isConfirmedReservationPage && !isMenuPage && (
+    {!isConfirmedReservationPage && (
       <div>
         <Header className='header'/>
       </div>

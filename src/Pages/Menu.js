@@ -25,7 +25,7 @@ const styles = {
         marginBottom: '6rem'
     },
     MenuPageHeading: {
-        minHeight: '220px',
+        minHeight: '320px',
         width: '100%',
         color: 'white',
         background: `linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(${backgroundHeadingPhoto}) no-repeat center bottom`,

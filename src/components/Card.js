@@ -11,10 +11,7 @@ const Card = (props) => {
       card: {
         backgroundColor: "#fff",
         borderRadius: "1rem",
-        borderBottom: '1px solid #666',
-        borderLeft: '1px solid #666',
-        borderRight: '1px solid #666',
-        // boxShadow: '0 2px 2px 1px #030303',
+        border: '2px solid black',
         paddingBottom: "1.25rem",
         width: props.width,
         height: "auto",
@@ -25,7 +22,7 @@ const Card = (props) => {
       },
       cardImage: {
         width: "100%",
-        height: "200px",
+        height: "260px",
         backgroundColor: "white",
         objectFit: "cover",
         borderTopLeftRadius: "1rem",
@@ -47,7 +44,7 @@ const Card = (props) => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        padding: "0 1rem",
+        padding: "0 1.5rem",
       },
       foodCardButton: {
         alignSelf: "flex-end",
@@ -71,7 +68,7 @@ const Card = (props) => {
           </div>
           <div style={cardStyles.foodCardInfo}>
             <div style={cardStyles.foodCardHeading} >
-              <p className='pBold-18'>
+              <p style={{fontSize: '20px', fontWeight: 'bold'}}>
                 {props.title}
               </p>
               <span

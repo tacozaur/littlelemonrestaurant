@@ -168,6 +168,7 @@ nav a {text-decoration: none;}
 @media screen and (max-width: 768px) {
     header {
         justify-content: space-around;
+        box-shadow: none;
     }
     nav ul {
         background-color: white;
@@ -177,7 +178,7 @@ nav a {text-decoration: none;}
         right: 0;
         display: flex;
         flex-direction: column;
-        min-height: 100%;
+        min-height: 100vh;
         padding-top: 5rem;
     }
     nav ul li {

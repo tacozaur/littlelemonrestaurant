@@ -16,11 +16,12 @@ export default function useHover() {
         const newHoverStyles = [...hoverStyles]
         newHoverStyles[index] = {
             position: 'relative',
-            transition: 'all .2s ease',
+            transition: 'all .2s ease-in-out',
             transform: 'translateY(-12px)',
             boxShadow: '0px 10px 20px rgba(0,0,0,0..2)',
             cursor: 'pointer',
-            zIndex: 1
+            zIndex: 1,
+            backgroundColor: 'rgba(252, 225, 204, .4)',
         }
         setHoverStyles(newHoverStyles)
     }
