@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/littlelemonrestaurant/static/css/main.9e9766f6.css",
-    "main.js": "/littlelemonrestaurant/static/js/main.09ababee.js",
+    "main.css": "/littlelemonrestaurant/static/css/main.e1cbb7a5.css",
+    "main.js": "/littlelemonrestaurant/static/js/main.cd3c3456.js",
     "static/js/787.99ffa8e0.chunk.js": "/littlelemonrestaurant/static/js/787.99ffa8e0.chunk.js",
     "static/media/backgroundBookingConfirmation.jpg": "/littlelemonrestaurant/static/media/backgroundBookingConfirmation.c62921034da001c96aba.jpg",
     "static/media/patriota.jpg": "/littlelemonrestaurant/static/media/patriota.0f2fb214d816899194ff.jpg",
@@ -33,12 +33,12 @@
     "static/media/pasta-icon.PNG": "/littlelemonrestaurant/static/media/pasta-icon.477a332af63a3cb0ae84.PNG",
     "static/media/salads-icon.PNG": "/littlelemonrestaurant/static/media/salads-icon.5fbe2bb12373912a59c8.PNG",
     "index.html": "/littlelemonrestaurant/index.html",
-    "main.9e9766f6.css.map": "/littlelemonrestaurant/static/css/main.9e9766f6.css.map",
-    "main.09ababee.js.map": "/littlelemonrestaurant/static/js/main.09ababee.js.map",
+    "main.e1cbb7a5.css.map": "/littlelemonrestaurant/static/css/main.e1cbb7a5.css.map",
+    "main.cd3c3456.js.map": "/littlelemonrestaurant/static/js/main.cd3c3456.js.map",
     "787.99ffa8e0.chunk.js.map": "/littlelemonrestaurant/static/js/787.99ffa8e0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e9766f6.css",
-    "static/js/main.09ababee.js"
+    "static/css/main.e1cbb7a5.css",
+    "static/js/main.cd3c3456.js"
   ]
 }
