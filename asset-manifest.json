@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/littlelemonrestaurant/static/css/main.4f09afb8.css",
-    "main.js": "/littlelemonrestaurant/static/js/main.d245e118.js",
+    "main.css": "/littlelemonrestaurant/static/css/main.9e9766f6.css",
+    "main.js": "/littlelemonrestaurant/static/js/main.09ababee.js",
     "static/js/787.99ffa8e0.chunk.js": "/littlelemonrestaurant/static/js/787.99ffa8e0.chunk.js",
     "static/media/backgroundBookingConfirmation.jpg": "/littlelemonrestaurant/static/media/backgroundBookingConfirmation.c62921034da001c96aba.jpg",
     "static/media/patriota.jpg": "/littlelemonrestaurant/static/media/patriota.0f2fb214d816899194ff.jpg",
-    "static/media/hero-img.png": "/littlelemonrestaurant/static/media/hero-img.2a9fd1c74f72fc8fdb31.png",
     "static/media/pasta-img.PNG": "/littlelemonrestaurant/static/media/pasta-img.60f48359bab63ece2aba.PNG",
     "static/media/appetizers-img.PNG": "/littlelemonrestaurant/static/media/appetizers-img.8c143a653be6bc6b6378.PNG",
     "static/media/aboutUsBackground.jpg": "/littlelemonrestaurant/static/media/aboutUsBackground.8ad1d331a16ab3c8fbc9.jpg",
     "static/media/pizza-img.PNG": "/littlelemonrestaurant/static/media/pizza-img.5199e90875e847255330.PNG",
     "static/media/carbonara.jpeg": "/littlelemonrestaurant/static/media/carbonara.883ffb86b7c10f4e8596.jpeg",
     "static/media/soupsandsalads-img.PNG": "/littlelemonrestaurant/static/media/soupsandsalads-img.4d9710334c49d316bc60.PNG",
+    "static/media/herobackground.png": "/littlelemonrestaurant/static/media/herobackground.51fddf5364c10ca16d23.png",
     "static/media/tuscany.jpg": "/littlelemonrestaurant/static/media/tuscany.eede14efaacfbcbc6a6b.jpg",
     "static/media/milanese-caprese.jpg": "/littlelemonrestaurant/static/media/milanese-caprese.0e281a349593a31dc1c9.jpg",
     "static/media/bolognese.jpg": "/littlelemonrestaurant/static/media/bolognese.4b6b737224d3d6bf5993.jpg",
-    "static/media/restaurant.jpg": "/littlelemonrestaurant/static/media/restaurant.324d0f99bdf19400a0f7.jpg",
     "static/media/quatrocheese.jpg": "/littlelemonrestaurant/static/media/quatrocheese.3cef5a21c19286ac981d.jpg",
     "static/media/alioeolio.jpg": "/littlelemonrestaurant/static/media/alioeolio.e5f8bb49f6ce58b8297c.jpg",
     "static/media/sausage.jpg": "/littlelemonrestaurant/static/media/sausage.70b3e841c3ec527ae35b.jpg",
@@ -34,12 +33,12 @@
     "static/media/pasta-icon.PNG": "/littlelemonrestaurant/static/media/pasta-icon.477a332af63a3cb0ae84.PNG",
     "static/media/salads-icon.PNG": "/littlelemonrestaurant/static/media/salads-icon.5fbe2bb12373912a59c8.PNG",
     "index.html": "/littlelemonrestaurant/index.html",
-    "main.4f09afb8.css.map": "/littlelemonrestaurant/static/css/main.4f09afb8.css.map",
-    "main.d245e118.js.map": "/littlelemonrestaurant/static/js/main.d245e118.js.map",
+    "main.9e9766f6.css.map": "/littlelemonrestaurant/static/css/main.9e9766f6.css.map",
+    "main.09ababee.js.map": "/littlelemonrestaurant/static/js/main.09ababee.js.map",
     "787.99ffa8e0.chunk.js.map": "/littlelemonrestaurant/static/js/787.99ffa8e0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f09afb8.css",
-    "static/js/main.d245e118.js"
+    "static/css/main.9e9766f6.css",
+    "static/js/main.09ababee.js"
   ]
 }
