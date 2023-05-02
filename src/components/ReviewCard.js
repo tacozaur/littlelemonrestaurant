@@ -7,7 +7,6 @@ import useHover from '../hooks/useHover';
 
 
 const ReviewCard = (props) => {
-        const [cardHover, hoverStyles, handleMouseHover, handleMouseLeave] = useHover()
 
         // Calculate star rating base on rating prop
         const starRating = (rating) => {
@@ -58,15 +57,12 @@ const ReviewCard = (props) => {
     const reviewCardStyles = {
 
         reviewCard: {
+            color: 'white',
             flex: '0 1 calc(25% - 20px)',
             maxWidth:'300px',
-            backgroundColor: '#fff',
-            border: '1px solid #ccc',
             padding: '20px',
             textAlign: 'center',
             borderRadius: '16px',
-            boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.35)",
-            ...hoverStyles[props.index]
         },
         reviewCardImage: {
             width: '100px',
@@ -94,8 +90,6 @@ const ReviewCard = (props) => {
     return (
         <div
         style={reviewCardStyles.reviewCard}
-        onMouseEnter={() => handleMouseHover(props.index)}
-        onMouseLeave={() => handleMouseLeave(props.index)}
         >
             <img src={props.image} alt={props.title} style={reviewCardStyles.reviewCardImage}/>
             <p

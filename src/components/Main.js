@@ -8,22 +8,26 @@ const Hero = () => {
     return (
         <>
             <div className='hero-content-container'>
-                <h1>Little Lemon</h1>
-                <h2>Chicago</h2>
+                <h1 style={{color: '#fff'}}>Fresh<span style={{color: '#ff6d00'}}> Food</span></h1>
+                <div className='and-symbol'>
+                    <p>&</p>
+                </div>
+                <h2>&nbsp;&nbsp;Great Taste</h2>
                 <div className='hero-cta'>
-                    <p className='pMedium-18'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>
+                        Our food is made from the freshest indgriedents and this <br/> results in great taste in every bite.
+                    </p>
                     <Button
                         to="/reservations"
-                        bgColor='#F4CE14'
-                        hoverBgColor='#EE9972'
-                        textColor='#333'
-                        hoverTextColor='#fff'
+                        bgColor='#ff6d00'
+                        hoverBgColor='#faf4d3'
+                        textColor='#fff'
+                        hoverTextColor='#000'
                         text="Reserve a Table"
-                        padding='16px 24px'
+                        padding='1.5rem 3rem'
                     />
                 </div>
             </div>
-            <div className='hero-image-container'></div>
         </>
     )
 }

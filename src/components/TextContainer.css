@@ -17,6 +17,10 @@
     flex-direction: column;
     gap: 1rem;
 }
+.bigHeading {
+    color: #ff6d00;
+}
+
 .img {
     min-height: 20vh;
     max-height: 30vh;

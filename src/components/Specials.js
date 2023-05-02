@@ -11,22 +11,30 @@ const Specials = () => {
     return (
         <React.Fragment>
             <section className='highlightsContainer'>
-                <div className='specialsHeading'>
-                    <h1 className='specialsTitle'>This weeks specials!</h1>
+                <div className='highlightsQuote'>
+                    <p>
+                        "Savor the Taste of Perfection: Where <span className='orange-text'> Freshness & Quality</span> Meet
+                        - Discover the Culinary Delights of <span className='orange-text'>Our Restaurant</span>! We Avoid to Use Artificial 
+                        Ingridients and Food Additives During Cooking Process."
+                    </p>
                     <Button
                     to={'/menu'}
                     className='specialsMenuButton'
-                    bgColor='rgb(73, 94, 87)'
-                    hoverBgColor='#EE9972'
+                    bgColor='#004643'
+                    hoverBgColor='#0c1618'
                     textColor='#fff'
-                    hoverTextColor='#333'
+                    hoverTextColor='#fff'
                     text="Online Menu"
-                    padding='16px 24px'
+                    padding='1.5rem 8rem'
                     />
                 </div>
+                <div className='specialsHeading'>
+                    <h1 className='specialsTitle'>This week's specials!</h1>
+
+                </div>
                 <div className='specialsContainer'>
-                    {APPETIZERS.slice(0, -1).map((item, index) => (
-                        <Card key={index} {...item} height='130px'/>
+                    {APPETIZERS.slice(0, -2).map((item, index) => (
+                        <Card key={index} {...item} height='130px' width='345px'/>
                     ))}
                 </div>
             </section>

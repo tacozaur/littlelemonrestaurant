@@ -26,7 +26,7 @@ const FoodCategoryButton = (props) => {
             borderRadius: '6px',
             border: 'none',
             boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.35)",
-            backgroundColor: buttonHover ? 'rgba(73,94,87, 1)' : 'rgba(73,94,87, .75)',
+            backgroundColor: buttonHover ? 'rgba(0, 70, 67, 1)' : 'rgba(0, 70, 67, .75)',
             fontSize: '1.25rem',
             fontWeight: '500',
             cursor: 'pointer',

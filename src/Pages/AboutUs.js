@@ -39,7 +39,7 @@ const AboutUs = () => {
     return (
         <>
         <div style={styles.aboutUsPageContainer}>
-            <div style={styles.aboutUsPageHeading}>
+            <div style={styles.aboutUsPageHeading} className='aboutUsPageHeading'>
             <h1>Little Lemon's Stories</h1>
             <h2>About us</h2>
             </div>

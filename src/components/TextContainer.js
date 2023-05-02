@@ -46,7 +46,7 @@ const TextContainer = ({
                     :
                     <div className='heading'>
                         <h1 class='bigHeading'>{heading}</h1>
-                        <h2>{subheading}</h2>
+                        <h2 class='subheading'>{subheading}</h2>
                     </div>
                 }
             </div>

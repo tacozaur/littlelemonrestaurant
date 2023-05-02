@@ -62,8 +62,8 @@ const ConfirmedBooking = () => {
                 <Button
                 to='/'
                 hoverBgColor="rgb(244, 120, 50)"
-                bgColor="rgb(244, 206, 20)"
-                textColor='#333'
+                bgColor="#ff6d00"
+                textColor='#fff'
                 hoverTextColor='#fff'
                 text="Go to Home"
                 padding='16px 24px'

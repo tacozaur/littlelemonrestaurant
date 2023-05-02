@@ -55,25 +55,25 @@ const OrderOnlinePage = () => {
                 <h2 id='appetizers'>Appetizers</h2>
                 <div className='foodCategoryCardList'>
                     {APPETIZERS.slice(0, -1).map((item, index) => (
-                        <Card key={index} {...item} height='130px'/>
+                        <Card key={index} {...item} height='130px' width='300px'/>
                     ))}
                 </div>
                 <h2 id='soups-salads'>Soups & Salads</h2>
                 <div className='foodCategoryCardList'>
                     {SOUPSandSALADS.slice(0, -1).map((item, index) => (
-                        <Card key={index} {...item} height='130px'/>
+                        <Card key={index} {...item} height='130px' width='300px'/>
                     ))}
                 </div>
                 <h2 id='pasta'>Pasta</h2>
                 <div className='foodCategoryCardList'>
                     {PASTA.slice(0, -1).map((item, index) => (
-                        <Card key={index} {...item} height='130px'/>
+                        <Card key={index} {...item} height='130px' width='300px'/>
                     ))}
                 </div>
                 <h2 id='pizza'>Pizza</h2>
                 <div className='foodCategoryCardList'>
                     {PIZZA.slice(0, -1).map((item, index) => (
-                        <Card key={index} {...item} height='130px'/>
+                        <Card key={index} {...item} height='130px' width='300px'/>
                     ))}
                 </div>
             </div>

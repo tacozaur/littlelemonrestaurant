@@ -26,7 +26,7 @@ export const APPETIZERS = [
         image: antipastoImg,
         title: 'Antipasto Originale',
         price: '$15.80',
-        description: `Original Italian, salami, prosciutto, mozzarella,
+        description: `Italian dish, salami, prosciutto, mozzarella,
                         tomatoes, artichockes and garlic oil eggplant.`
     },
     {

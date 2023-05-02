@@ -81,9 +81,9 @@ const MenuPage = () => {
             <div style={styles.MenuSection}>
                 <Button
                 to="/reservations"
-                bgColor='#F4CE14'
-                hoverBgColor='rgb(244, 120, 50)'
-                textColor='#333'
+                bgColor='#ff6d00'
+                hoverBgColor='#0c1618'
+                textColor='#fff'
                 hoverTextColor='#fff'
                 text="Reserve a Table"
                 padding='24px 52px'

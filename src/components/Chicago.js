@@ -14,8 +14,10 @@ const Chicago = () => {
                     <h2>Chicago</h2>
                 </div>
                 <div className='about-container-description'>
-                    <p className='pRegular-16'>Yorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis class aptent taciti sociosqa. <br/>Ad litora torquent
-Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper</p>
+                    <p className='pRegular-16'>
+                        Yorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis class aptent taciti sociosqa. <br/>Ad litora torquent
+                        Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper
+                    </p>
                 </div>
             </div>
             <div className='restaurant-images-container'>

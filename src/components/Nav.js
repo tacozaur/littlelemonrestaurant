@@ -16,8 +16,7 @@ const navItems = [
     'About',
     'Menu',
     'Reservations',
-    'Order Online',
-    'Login'
+    'Order Online'
 ]
 
 const Nav = ({isNavVisible}) => {
@@ -40,9 +39,6 @@ const Nav = ({isNavVisible}) => {
                     </li>
                     <li>
                     <Link to="/online-order" className="nav-item pExtraBoldUPPER-20"><p>{navItems[4]}</p></Link>
-                    </li>
-                    <li>
-                    <Link to="/" className="nav-item pExtraBoldUPPER-20"><p>{navItems[5]}</p></Link>
                     </li>
                     <li>
                     <Link to="/" className="nav-item cartt">

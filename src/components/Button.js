@@ -26,7 +26,7 @@ const Button = (props) => {
             border: 'none',
             backgroundColor: buttonHover ? props.hoverBgColor : props.bgColor,
             transform: buttonHover ? 'scale(1.075)' : 'scale(1)',
-            fontSize: 'var(--p)',
+            fontSize: '1.125rem',
             fontWeight: '500',
             cursor: 'pointer'
         },

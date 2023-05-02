@@ -34,9 +34,9 @@ const Header = () => {
             const screenWidth = window.innerWidth
 
             if (currentScrollPos > 0) {
-                header.style.backgroundColor = '#495E57';
+                header.style.backgroundColor = '#004643';
             } else {
-                header.style.backgroundColor = 'rgba(1, 1, 1, .35)';
+                header.style.backgroundColor = 'transparent';
             }
 
             if (screenWidth < 768) {

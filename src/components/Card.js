@@ -11,9 +11,12 @@ const Card = (props) => {
       card: {
         backgroundColor: "#fff",
         borderRadius: "1rem",
-        boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.35)",
+        borderBottom: '1px solid #666',
+        borderLeft: '1px solid #666',
+        borderRight: '1px solid #666',
+        // boxShadow: '0 2px 2px 1px #030303',
         paddingBottom: "1.25rem",
-        width: "285px",
+        width: props.width,
         height: "auto",
         display: "flex",
         rowGap: ".5rem",
@@ -72,7 +75,7 @@ const Card = (props) => {
                 {props.title}
               </p>
               <span
-              style={{ color: "#EE9972", fontWeight: "400" }}
+              style={{ color: "#ff6d00", fontWeight: "400" }}
               className='pExtraBoldUPPER-20'
               >
                 {props.price}
@@ -80,16 +83,16 @@ const Card = (props) => {
             </div>
             <div style={cardStyles.foodCardDescription }>
               <p
-              style={{ color: "#495E57" }}
+              style={{ color: "#495E57", height: '6rem' }}
               className='pRegular-16'
               >
                 {props.description}
               </p>
               <Button
-                bgColor="#F4CE14"
-                hoverBgColor="#333333"
-                textColor ='#333'
-                hoverTextColor= '#fff'
+                bgColor='#ff6d00'
+                hoverBgColor='#0c1618'
+                textColor='#fff'
+                hoverTextColor='#fff'
                 style={cardStyles.foodCardButton}
                 text="Add To Cart"
                 padding='16px 24px'
